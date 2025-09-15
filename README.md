@@ -39,14 +39,9 @@ The project consists of two implementations of a task management system:
 - Visual Studio 2025 or VS Code
 
 ### Database Configuration
-The application is configured to use SQL Server. The connection string in `appsettings.Development.json` is set to:
-```json
-"ConnectionStrings": {
-    "DefaultConnection": "Server=localhost,1444;Database=TasksManagerDB;User Id=sa;Password=SqlPassword!;TrustServerCertificate=True;MultipleActiveResultSets=true"
-}
-```
+The application uses SQL Server for data persistence. You'll need to update the connection string in `appsettings.Development.json` according to your SQL Server instance configuration.
 
-Update this connection string according to your SQL Server instance.
+Note: For security reasons, never commit sensitive database credentials to source control. Consider using user secrets or environment variables for production deployments.
 
 ### Running the Applications
 
