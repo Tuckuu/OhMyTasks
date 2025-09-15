@@ -6,6 +6,15 @@
 # dotenv files
 .env
 
+# Development configuration files
+appsettings.Development.json
+*.Development.json
+*.Local.json
+*.local.json
+*.Production.json
+secrets.json
+connectionstrings.json
+
 # exclude .idea folder
 .idea/
 
